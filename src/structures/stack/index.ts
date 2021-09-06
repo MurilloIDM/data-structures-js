@@ -1,33 +1,35 @@
 class Stack {
+  private items: Array<any>;
+
   constructor() {
     this.items = [];
   }
-
-  size() {
-    const size = this.items.length;
-    return size;
-  }
-
-  push(element) {
+  
+  push(element: any): void {
     this.items.push(element);
   }
 
-  pop() {
+  pop(): any {
     return this.items.pop();
   }
-
-  peek() {
+  
+  peek(): any {
     const element = this.items[this.size() - 1];
     return element;
   }
 
-  isEmpty() {
+  isEmpty(): boolean {
     return this.size() === 0;
   }
 
-  clear() {
+  size(): number {
+    const size = this.items.length;
+    return size;
+  }
+
+  clear(): void {
     this.items = [];
   }
 }
 
-module.exports = Stack;
+export default Stack;

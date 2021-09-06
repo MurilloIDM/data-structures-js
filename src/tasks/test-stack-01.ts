@@ -1,4 +1,4 @@
-const Stack = require('../stack/stack-array');
+import Stack from "src/structures/stack";
 
 const stack = new Stack();
 

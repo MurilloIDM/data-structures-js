@@ -1,6 +1,6 @@
-const Stack = require('../stack/stack-array');
+import Stack from "src/structures/stack";
 
-function decimalToBinary(decimalNumber) {
+function decimalToBinary(decimalNumber: number) {
   const remStack = new Stack();
 
   let number = decimalNumber;

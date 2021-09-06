@@ -1,6 +1,6 @@
-const Stack = require('../stack/stack-array');
+import Stack from "src/structures/stack";
 
-function baseConverter(decimal, base) {
+function baseConverter(decimal: number, base: number) {
   const remStack = new Stack();
   const digits = '0123456789ABCDEFGHIJKLMNOPQRSTUVWYZ';
 
@@ -17,7 +17,8 @@ function baseConverter(decimal, base) {
     remStack.push(rem);
     number = Math.floor(number / base);
   }
-  console.log(remStack.items);
+
+  
   while (!remStack.isEmpty()) {
     baseString += digits[remStack.pop()];
   }
