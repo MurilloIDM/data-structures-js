@@ -1,0 +1,15 @@
+{
+  "name": "data-structures",
+  "version": "1.0.0",
+  "description": "Estrutura de dados com Typescript",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "develop": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.2"
+  },
+  "dependencies": {}
+}
